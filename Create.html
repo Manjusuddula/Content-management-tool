@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Management</title>
-    <link rel="stylesheet" href="styles.css">
+    <title> Bharat Intern </title>
+
+    <link rel="stylesheet" href="task.css">
 </head>
-<body>
-    <header>
-        <h1>Project Management</h1>
-    </header>
-    <section id="app">
-        <div class="task-list">
-            <h2>Tasks</h2>
-            <ul id="task-list"></ul>
-            <input type="text" id="task-input" placeholder="Add a new task">
-            <button id="add-task-btn">Add Task</button>
-        </div>
-        <div class="project-details">
-            <h2>Project Details</h2>
-            <p>Project Name: <span id="project-name">Sample Project</span></p>
-        </div>
-    </section>
-    <script src="script.js"></script>
+<div class="blogs">
+    <div class="heading">
+        <h1>Bharat Intern</h1>
+    </div>
+    <div class="form">
+        <form id="blogform">
+            <table>
+                <tr>
+                    <td>
+                        <lable>Title/Heading:</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="title"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Content:</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="content"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Browse Image:</lable>
+
+                        <input type="file" id="image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Browse Video:</lable>
+                        <input type="file" id="video">
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div id="form-submission">
+    <h1>My blogs</h1>
+    <p><strong>Title:</strong><span id="title-show"></span></p>
+    <p><strong>Content:</strong><span id="content-show"></span></p>
+    <p><strong>Image:</strong></p>
+    <img id="image-show" src="">
+    <p><strong>Video:</strong></p>
+    <video id="video-show" src=""></video>
+</div>
+<script src="task.js"></script>
 </body>
-</html>
+
+</html>--
